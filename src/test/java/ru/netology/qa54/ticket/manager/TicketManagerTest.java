@@ -5,10 +5,14 @@ import org.junit.jupiter.api.Test;
 import ru.netology.qa54.ticket.domain.Ticket;
 import ru.netology.qa54.ticket.repository.TicketRepository;
 
+import java.util.Comparator;
+
 public class TicketManagerTest {
 
     TicketRepository repo = new TicketRepository();
     TicketManager manager = new TicketManager(repo);
+
+    Comparator<Ticket> comparator = new TicketTravelTimeComparator();
 
     Ticket ticket1 = new Ticket(1, 25_000, "DMD", "TH", 9);
     Ticket ticket2 = new Ticket(2, 5000, "SVO", "KZN", 3);
@@ -32,7 +36,7 @@ public class TicketManagerTest {
     public void shouldFindSomeTicket() {
 
         Ticket[] expected = {ticket4, ticket1};
-        Ticket[] actual = manager.findAll("DMD", "TH");
+        Ticket[] actual = manager.findAllNew("DMD", "TH", comparator);
 
         Assertions.assertArrayEquals(expected, actual);
 
