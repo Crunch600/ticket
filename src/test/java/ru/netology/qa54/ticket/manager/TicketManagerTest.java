@@ -1,6 +1,9 @@
+package ru.netology.qa54.ticket.manager;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import ru.netology.qa54.ticket.domain.Ticket;
+import ru.netology.qa54.ticket.repository.TicketRepository;
 
 public class TicketManagerTest {
 

@@ -1,3 +1,8 @@
+package ru.netology.qa54.ticket.manager;
+
+import ru.netology.qa54.ticket.domain.Ticket;
+import ru.netology.qa54.ticket.repository.TicketRepository;
+
 import java.util.Arrays;
 
 public class TicketManager {

@@ -1,3 +1,9 @@
+package ru.netology.qa54.ticket.repository;
+
+import ru.netology.qa54.ticket.domain.Ticket;
+import ru.netology.qa54.ticket.exception.AlreadyExistException;
+import ru.netology.qa54.ticket.exception.NotFoundException;
+
 public class TicketRepository {
 
     public Ticket[] tickets = new Ticket[0];
