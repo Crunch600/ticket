@@ -36,11 +36,11 @@ public class TicketManager {
     }
 
     public boolean matches(Ticket ticket, String fromAirport, String toAirport) {
-            if (ticket.getFromAirport().equals(fromAirport)) {
-                if (ticket.getToAirport().equals(toAirport)) {
-                    return true;
-                }
+        if (ticket.getFromAirport().equals(fromAirport)) {
+            if (ticket.getToAirport().equals(toAirport)) {
+                return true;
             }
+        }
         return false;
     }
 

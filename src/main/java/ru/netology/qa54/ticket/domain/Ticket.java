@@ -1,4 +1,5 @@
 package ru.netology.qa54.ticket.domain;
+
 public class Ticket implements Comparable<Ticket> {
 
     protected int id;
@@ -55,7 +56,6 @@ public class Ticket implements Comparable<Ticket> {
     public void setTravelTime(int travelTime) {
         this.travelTime = travelTime;
     }
-
 
     @Override
     public int compareTo(Ticket o) {
