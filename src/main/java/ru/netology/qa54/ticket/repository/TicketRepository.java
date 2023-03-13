@@ -40,7 +40,7 @@ public class TicketRepository {
     }
 
     public Ticket findById(int id) {
-        for (Ticket ticket: tickets) {
+        for (Ticket ticket : tickets) {
             if (ticket.getId() == id) {
                 return ticket;
             }

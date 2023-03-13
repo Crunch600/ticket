@@ -1,4 +1,5 @@
 package ru.netology.qa54.ticket.domain;
+
 public class Ticket implements Comparable<Ticket> {
 
     protected int id;
